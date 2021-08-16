@@ -1,0 +1,7 @@
+将csv根据size进行多行分割生成新的csv，有几个size值就分割几行。
+1.生成的csv命名为原csv_new.csv
+2.原来的csv中第一列和第二列是固定位id和size,其他列内容和名称都不固定
+3.生成的csv中第一列的值为code,并且code的值为id_1,id_2等 有几个size属性值就命名到几个，比如原来csv第一个的id值为FG20041416，size有25个。则命名为FG20041416_1,FG20041416_2....FG20041416_25
+4.生成的csv中第二列的值为newsize，其他列为复制原来csv的内容
+5.原文件数据csv中size是以|来分割
+6.生成的结果可参考压缩包里的product_data_new.csv。注意product_data_new.csv只是以FG20041416为例子
