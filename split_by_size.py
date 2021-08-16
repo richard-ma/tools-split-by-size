@@ -50,7 +50,7 @@ class CsvFile():
         self.fieldnames[0] = 'code'
         self.fieldnames[1] = 'new_size'
         
-        with open(self.write_filename, 'w+', encoding='GBK') as f:
+        with open(self.write_filename, 'w+', encoding='GBK', newline='') as f:
             w = csv.DictWriter(f, fieldnames = self.fieldnames)
             w.writeheader()
             
